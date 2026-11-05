@@ -9,6 +9,9 @@ outputs/dashboard/preview*.png
 # 论文排版检查缩略图
 paper_check/
 
+# 校徽素材不随仓库分发
+assets/logo.png
+
 # Python
 __pycache__/
 *.py[cod]

@@ -304,7 +304,9 @@ def cover(doc):
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(6)
     p.paragraph_format.space_after = Pt(14)
-    p.add_run().add_picture(str(ASSETS / "logo.png"), width=Cm(8.4))
+    logo = ASSETS / "logo.png"
+    if logo.exists():
+        p.add_run().add_picture(str(logo), width=Cm(8.4))
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
