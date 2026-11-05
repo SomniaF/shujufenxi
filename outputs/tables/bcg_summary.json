@@ -1,0 +1,34 @@
+{
+  "growth_median": 0.180915982127178,
+  "share_median": 0.00022200264590090444,
+  "quadrants": [
+    {
+      "quadrant": "明星",
+      "zones": 44,
+      "trips": 695337,
+      "revenue": 23611032.32,
+      "revenue_share": 0.021361804567377227
+    },
+    {
+      "quadrant": "现金牛",
+      "zones": 67,
+      "trips": 38182648,
+      "revenue": 1070249880.85,
+      "revenue_share": 0.9682960271758445
+    },
+    {
+      "quadrant": "瘦狗",
+      "zones": 44,
+      "trips": 113391,
+      "revenue": 4357675.04,
+      "revenue_share": 0.0039425553830514486
+    },
+    {
+      "quadrant": "问题",
+      "zones": 67,
+      "trips": 196540,
+      "revenue": 6851655.89,
+      "revenue_share": 0.006198955306207427
+    }
+  ]
+}

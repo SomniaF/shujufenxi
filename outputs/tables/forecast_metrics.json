@@ -1,0 +1,31 @@
+{
+  "model": "SARIMAX",
+  "order": [
+    1,
+    1,
+    2
+  ],
+  "seasonal_order": [
+    1,
+    0,
+    1,
+    7
+  ],
+  "exog": [
+    "is_holiday",
+    "thanksgiving_week"
+  ],
+  "aic": 6807.938257483668,
+  "train_days": 335,
+  "test_days": 31,
+  "val_month": "2024-11",
+  "val_mape": 10.439786237335523,
+  "mae": 21064.50426967633,
+  "rmse": 23414.66389199429,
+  "mape": 20.441649645515636,
+  "r2": 0.2755443746428866,
+  "ljung_box_p": 0.15650117352807152,
+  "dec_actual_total": 3474763.0,
+  "dec_forecast_total": 3290588.2167222863,
+  "dec_total_error_pct": -5.300355255242263
+}

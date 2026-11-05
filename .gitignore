@@ -1,0 +1,27 @@
+# 数据文件（体积较大，可用 scripts/01_load.py --download 与 run_all.py 重新生成）
+data/raw/
+data/clean/
+
+# 大屏临时截图与调试文件
+outputs/dashboard/_*
+outputs/dashboard/preview*.png
+
+# 论文排版检查缩略图
+paper_check/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml

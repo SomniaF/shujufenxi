@@ -1,0 +1,27 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "rows": 914737,
+  "train_rows": 640315,
+  "test_rows": 274422,
+  "positive_rate": 0.5555749904070788,
+  "auc": 0.771215843673722,
+  "auc_logit": 0.7467006011646972,
+  "accuracy": 0.7554423479167122,
+  "precision": 0.7191248356884653,
+  "recall": 0.9185961091944223,
+  "f1": 0.8067128629605949,
+  "brier": 0.17756222917504372,
+  "top_features": [
+    "fare",
+    "hour",
+    "RatecodeID_99",
+    "duration_min",
+    "weekday",
+    "distance_mi",
+    "borough_pu_Manhattan",
+    "airport_i",
+    "time_band_晚高峰",
+    "borough_pu_Queens"
+  ],
+  "note": "仅信用卡行程；慷慨小费定义为小费率≥25%（高于默认 20% 档）；现金小费不可观测，结论不外推到现金支付。"
+}

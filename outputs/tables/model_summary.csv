@@ -1,0 +1,7 @@
+﻿业务问题,模型,指标,取值
+需求预测,SARIMAX,MAPE(%),20.44
+需求预测,SARIMAX,RMSE,23414.7
+区域聚类,KMeans,轮廓系数,0.286
+小费行为,HistGradientBoosting,AUC,0.771
+小费行为,LogisticRegression,AUC,0.747
+异常检测,STL,异常天数,12.0

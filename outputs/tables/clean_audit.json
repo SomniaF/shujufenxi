@@ -1,0 +1,152 @@
+{
+  "raw_rows": 41169720,
+  "in_year_rows": 41169664,
+  "analysis_rows": 39192643,
+  "retention_rate": 0.951979,
+  "excluded": {
+    "out_of_year": 56,
+    "bad_duration": 524922,
+    "bad_distance": 777918,
+    "negative_amount": 733884,
+    "bad_zone": 425655
+  },
+  "duplicate_key_rows": 9,
+  "speed_over_60_rows": 3038,
+  "missing_by_field": {
+    "passenger_count": 4091232,
+    "RatecodeID": 4091232,
+    "congestion_surcharge": 4091232,
+    "Airport_fee": 4091232
+  },
+  "months": [
+    {
+      "month": "2024-01",
+      "raw_rows": 2964624,
+      "in_year_rows": 2964609,
+      "core_rows": 2831734,
+      "card_share": 0.8025,
+      "airport_share": 0.0974,
+      "avg_duration_min": 14.92,
+      "avg_distance_mi": 3.24
+    },
+    {
+      "month": "2024-02",
+      "raw_rows": 3007526,
+      "in_year_rows": 3007524,
+      "core_rows": 2866201,
+      "card_share": 0.8017,
+      "airport_share": 0.0903,
+      "avg_duration_min": 15.33,
+      "avg_distance_mi": 3.18
+    },
+    {
+      "month": "2024-03",
+      "raw_rows": 3582628,
+      "in_year_rows": 3582626,
+      "core_rows": 3397519,
+      "card_share": 0.7496,
+      "airport_share": 0.0947,
+      "avg_duration_min": 16.07,
+      "avg_distance_mi": 3.31
+    },
+    {
+      "month": "2024-04",
+      "raw_rows": 3514289,
+      "in_year_rows": 3514285,
+      "core_rows": 3371387,
+      "card_share": 0.7434,
+      "airport_share": 0.0961,
+      "avg_duration_min": 16.41,
+      "avg_distance_mi": 3.35
+    },
+    {
+      "month": "2024-05",
+      "raw_rows": 3723833,
+      "in_year_rows": 3723826,
+      "core_rows": 3571410,
+      "card_share": 0.7486,
+      "airport_share": 0.1005,
+      "avg_duration_min": 17.44,
+      "avg_distance_mi": 3.38
+    },
+    {
+      "month": "2024-06",
+      "raw_rows": 3539193,
+      "in_year_rows": 3539187,
+      "core_rows": 3382525,
+      "card_share": 0.7439,
+      "airport_share": 0.0991,
+      "avg_duration_min": 16.95,
+      "avg_distance_mi": 3.37
+    },
+    {
+      "month": "2024-07",
+      "raw_rows": 3076903,
+      "in_year_rows": 3076900,
+      "core_rows": 2931061,
+      "card_share": 0.7516,
+      "airport_share": 0.1113,
+      "avg_duration_min": 16.57,
+      "avg_distance_mi": 3.52
+    },
+    {
+      "month": "2024-08",
+      "raw_rows": 2979183,
+      "in_year_rows": 2979181,
+      "core_rows": 2826063,
+      "card_share": 0.7523,
+      "airport_share": 0.1159,
+      "avg_duration_min": 16.68,
+      "avg_distance_mi": 3.59
+    },
+    {
+      "month": "2024-09",
+      "raw_rows": 3633030,
+      "in_year_rows": 3633027,
+      "core_rows": 3440660,
+      "card_share": 0.7415,
+      "airport_share": 0.1025,
+      "avg_duration_min": 18.14,
+      "avg_distance_mi": 3.48
+    },
+    {
+      "month": "2024-10",
+      "raw_rows": 3833771,
+      "in_year_rows": 3833770,
+      "core_rows": 3631101,
+      "card_share": 0.7689,
+      "airport_share": 0.1029,
+      "avg_duration_min": 17.73,
+      "avg_distance_mi": 3.42
+    },
+    {
+      "month": "2024-11",
+      "raw_rows": 3646369,
+      "in_year_rows": 3646366,
+      "core_rows": 3468206,
+      "card_share": 0.7692,
+      "airport_share": 0.0933,
+      "avg_duration_min": 17.24,
+      "avg_distance_mi": 3.29
+    },
+    {
+      "month": "2024-12",
+      "raw_rows": 3668371,
+      "in_year_rows": 3668363,
+      "core_rows": 3474776,
+      "card_share": 0.7708,
+      "airport_share": 0.0974,
+      "avg_duration_min": 18.15,
+      "avg_distance_mi": 3.27
+    }
+  ],
+  "rules": [
+    "仅保留上车时间位于 2024-01-01 至 2024-12-31 的记录。",
+    "行程时长限定 1–240 分钟，距离限定 0.01–100 英里，fare/total 非负。",
+    "上下车区域须在 TLC 1–263 号区域内；不删除乘客数缺失记录。",
+    "小费率仅对信用卡支付且 fare>0 的行程计算，现金小费不可观测。",
+    "重复键按（上下车时间、上下车区域、总金额）识别，仅统计不删除。"
+  ],
+  "sample_rows": 1200000,
+  "note": "TLC 数据无行程唯一编号，无法做严格去重；重复键计数用于质量披露。"
+}

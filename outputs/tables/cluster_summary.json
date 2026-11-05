@@ -1,0 +1,87 @@
+{
+  "k": 4,
+  "silhouette": 0.28599303405339654,
+  "silhouette_by_k": {
+    "4": 0.28599303405339654,
+    "5": 0.2707595293049377,
+    "6": 0.2853664445023593
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "name": "通勤休闲混合型",
+      "n_zones": 50,
+      "trips": 703908.0,
+      "revenue": 22792958.240000002,
+      "trip_share": 0.01796020748077643,
+      "revenue_share": 0.020621661638353574,
+      "airport_share": 0.09287670814707935,
+      "weekend_share": 0.33892151058322695,
+      "peak_hour": 7,
+      "top_zones": [
+        "Two Bridges/Seward Park（Manhattan）",
+        "Stuy Town/Peter Cooper Village（Manhattan）",
+        "Central Harlem North（Manhattan）",
+        "Hamilton Heights（Manhattan）",
+        "Sunnyside（Queens）"
+      ]
+    },
+    {
+      "cluster": 1,
+      "name": "核心商业区型",
+      "n_zones": 51,
+      "trips": 33731230.0,
+      "revenue": 964451637.47,
+      "trip_share": 0.8606520871787086,
+      "revenue_share": 0.8725763073421218,
+      "airport_share": 0.0636786362041716,
+      "weekend_share": 0.28030055337800713,
+      "peak_hour": 18,
+      "top_zones": [
+        "Upper East Side South（Manhattan）",
+        "Midtown Center（Manhattan）",
+        "JFK Airport（Queens）",
+        "Upper East Side North（Manhattan）",
+        "Midtown East（Manhattan）"
+      ]
+    },
+    {
+      "cluster": 2,
+      "name": "夜间活力型",
+      "n_zones": 15,
+      "trips": 3826152.0,
+      "revenue": 92240985.0,
+      "trip_share": 0.09762424034531175,
+      "revenue_share": 0.08345394932195722,
+      "airport_share": 0.043376650267024405,
+      "weekend_share": 0.5153589049745726,
+      "peak_hour": 0,
+      "top_zones": [
+        "West Village（Manhattan）",
+        "East Village（Manhattan）",
+        "Greenwich Village South（Manhattan）",
+        "Lower East Side（Manhattan）",
+        "Little Italy/NoLiTa（Manhattan）"
+      ]
+    },
+    {
+      "cluster": 3,
+      "name": "早高峰通勤型",
+      "n_zones": 63,
+      "trips": 869711.0,
+      "revenue": 23432938.78,
+      "trip_share": 0.022190669815250787,
+      "revenue_share": 0.02120067652584853,
+      "airport_share": 0.01296070054377052,
+      "weekend_share": 0.23744247031055302,
+      "peak_hour": 7,
+      "top_zones": [
+        "Yorkville East（Manhattan）",
+        "Crown Heights North（Brooklyn）",
+        "East New York（Brooklyn）",
+        "Prospect-Lefferts Gardens（Brooklyn）",
+        "Canarsie（Brooklyn）"
+      ]
+    }
+  ]
+}

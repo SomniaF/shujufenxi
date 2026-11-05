@@ -1,0 +1,88 @@
+{
+  "total_trips": 39192643.0,
+  "total_revenue": 1105292029.31,
+  "avg_fare": 28.201518058121263,
+  "avg_distance": 3.3662981907089042,
+  "avg_duration": 16.86834282605879,
+  "card_share": 0.7611373389643561,
+  "airport_share": 0.09994051689752079,
+  "tip_total": 131203894.33000001,
+  "tip_rate_card": 0.22247857927071787,
+  "active_zones": 261,
+  "peak_day": "2024-12-14",
+  "peak_day_trips": 152423.0,
+  "peak_hour": 18,
+  "top_zone": "JFK Airport",
+  "top_zone_borough": "Queens",
+  "top_zone_revenue_share": 0.12919831705395254,
+  "forecast": {
+    "model": "SARIMAX",
+    "order": [
+      1,
+      1,
+      2
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      7
+    ],
+    "exog": [
+      "is_holiday",
+      "thanksgiving_week"
+    ],
+    "aic": 6807.938257483668,
+    "train_days": 335,
+    "test_days": 31,
+    "val_month": "2024-11",
+    "val_mape": 10.439786237335523,
+    "mae": 21064.50426967633,
+    "rmse": 23414.66389199429,
+    "mape": 20.441649645515636,
+    "r2": 0.2755443746428866,
+    "ljung_box_p": 0.15650117352807152,
+    "dec_actual_total": 3474763.0,
+    "dec_forecast_total": 3290588.2167222863,
+    "dec_total_error_pct": -5.300355255242263
+  },
+  "clusters": {
+    "k": 4,
+    "silhouette": 0.28599303405339654,
+    "names": [
+      "通勤休闲混合型",
+      "核心商业区型",
+      "夜间活力型",
+      "早高峰通勤型"
+    ]
+  },
+  "tip_model": {
+    "model": "HistGradientBoostingClassifier",
+    "rows": 914737,
+    "train_rows": 640315,
+    "test_rows": 274422,
+    "positive_rate": 0.5555749904070788,
+    "auc": 0.771215843673722,
+    "auc_logit": 0.7467006011646972,
+    "accuracy": 0.7554423479167122,
+    "precision": 0.7191248356884653,
+    "recall": 0.9185961091944223,
+    "f1": 0.8067128629605949,
+    "brier": 0.17756222917504372,
+    "top_features": [
+      "fare",
+      "hour",
+      "RatecodeID_99",
+      "duration_min",
+      "weekday",
+      "distance_mi",
+      "borough_pu_Manhattan",
+      "airport_i",
+      "time_band_晚高峰",
+      "borough_pu_Queens"
+    ],
+    "note": "仅信用卡行程；慷慨小费定义为小费率≥25%（高于默认 20% 档）；现金小费不可观测，结论不外推到现金支付。"
+  },
+  "anomaly_days": 12,
+  "top20_od_share": 0.061299616869421134
+}
