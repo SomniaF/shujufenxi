@@ -59,14 +59,14 @@ def save_fig(fig: plt.Figure, name: str, tight: bool = True) -> Path:
     path = FIG / f"{name}.png"
     fig.savefig(path, bbox_inches="tight", facecolor="white")
     plt.close(fig)
-    print(f"  图 -> outputs/figures/{name}.png")
+    print(f"  图 -> 教材outputs/figures/{name}.png")
     return path
 
 
 def save_table(df: pd.DataFrame, name: str, index: bool = False) -> Path:
     path = TAB / f"{name}.csv"
     df.to_csv(path, index=index, encoding="utf-8-sig")
-    print(f"  表 -> outputs/tables/{name}.csv")
+    print(f"  表 -> 教材outputs/tables/{name}.csv")
     return path
 
 
