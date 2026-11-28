@@ -1,6 +1,6 @@
-"""一键运行全部章节脚本，重新生成 outputs/ 下的图表。
+"""一键运行全部章节脚本，重新生成 教材outputs/ 下的图表。
 
-用法：py run_all.py
+用法：py 教材run_all.py
 """
 import subprocess
 import sys
@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 
 
 def main() -> int:
-    scripts = sorted(ROOT.glob("ch*/*.py"))
+    scripts = sorted(ROOT.glob("教材ch*/*.py"))
     if not scripts:
         print("未找到章节脚本")
         return 1
@@ -33,10 +33,10 @@ def main() -> int:
             print(proc.stderr[-2000:])
             failed.append(name)
     total = time.perf_counter() - start
-    figures = len(list((ROOT / "outputs" / "figures").glob("*.png")))
-    tables = len(list((ROOT / "outputs" / "tables").glob("*.csv")))
+    figures = len(list((ROOT / "教材outputs" / "figures").glob("*.png")))
+    tables = len(list((ROOT / "教材outputs" / "tables").glob("*.csv")))
     print(f"\n共 {len(scripts)} 个脚本，失败 {len(failed)} 个，用时 {total:.1f}s")
-    print(f"输出：{figures} 张图、{tables} 张表 -> outputs/")
+    print(f"输出：{figures} 张图、{tables} 张表 -> 教材outputs/")
     return 1 if failed else 0
 
 

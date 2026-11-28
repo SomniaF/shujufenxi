@@ -1,7 +1,7 @@
 """项目公共配置：路径、中文字体、配色与图表/表格输出。
 
 教材中的图表大多由 Power BI / Excel 生成，这里统一 matplotlib 风格，
-让每份脚本都能独立运行并把结果落到 outputs/ 下。
+让每份脚本都能独立运行并把结果落到 教材outputs/ 下。
 """
 from pathlib import Path
 
@@ -12,9 +12,9 @@ import pandas as pd
 matplotlib.use("Agg")
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
-FIG = ROOT / "outputs" / "figures"
-TAB = ROOT / "outputs" / "tables"
+DATA = ROOT / "教材data"
+FIG = ROOT / "教材outputs" / "figures"
+TAB = ROOT / "教材outputs" / "tables"
 
 for _d in (FIG, TAB):
     _d.mkdir(parents=True, exist_ok=True)

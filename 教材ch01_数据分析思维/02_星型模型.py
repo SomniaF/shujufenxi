@@ -18,9 +18,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from src.config import COLORS, save_fig, save_table, yuan
-from src.diagram import draw_schema
-from src.io_utils import read_excel
+from 教材src.config import COLORS, save_fig, save_table, yuan
+from 教材src.diagram import draw_schema
+from 教材src.io_utils import read_excel
 
 
 def build_star() -> tuple[pd.DataFrame, dict, pd.DataFrame]:

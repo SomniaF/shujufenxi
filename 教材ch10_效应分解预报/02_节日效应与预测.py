@@ -22,8 +22,8 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-from src.config import ACCENT, COLORS, GREY, save_fig, save_table
-from src.io_utils import read_excel
+from 教材src.config import ACCENT, COLORS, GREY, save_fig, save_table
+from 教材src.io_utils import read_excel
 
 WD_NAMES = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
 

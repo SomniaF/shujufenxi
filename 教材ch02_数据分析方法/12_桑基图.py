@@ -16,8 +16,8 @@ import pandas as pd
 from matplotlib.path import Path as MPath
 from matplotlib.patches import PathPatch, Rectangle
 
-from src.config import COLORS, GREY, save_fig, save_table
-from src.io_utils import read_excel
+from 教材src.config import COLORS, GREY, save_fig, save_table
+from 教材src.io_utils import read_excel
 
 
 def build_depth(flows) -> dict[str, int]:

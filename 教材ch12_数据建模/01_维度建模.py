@@ -19,9 +19,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from src.config import ACCENT, COLORS, GREY, save_fig, save_table
-from src.diagram import draw_schema
-from src.io_utils import read_excel
+from 教材src.config import ACCENT, COLORS, GREY, save_fig, save_table
+from 教材src.diagram import draw_schema
+from 教材src.io_utils import read_excel
 
 PRICE_CHANGES = [("A001", "2019-06-01", 200), ("B001", "2019-09-01", -150)]
 

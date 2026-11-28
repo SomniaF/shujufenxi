@@ -17,8 +17,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from src.config import ACCENT, COLORS, GREY, save_fig, save_table
-from src.io_utils import read_excel
+from 教材src.config import ACCENT, COLORS, GREY, save_fig, save_table
+from 教材src.io_utils import read_excel
 
 
 def cramers_v(table: np.ndarray) -> float:

@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from src.config import save_fig, save_table
-from src.io_utils import read_excel
+from 教材src.config import save_fig, save_table
+from 教材src.io_utils import read_excel
 
 
 def main() -> None:

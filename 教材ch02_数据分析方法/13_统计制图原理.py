@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from src.config import ACCENT, COLORS, GREY, save_fig, save_table
-from src.io_utils import read_csv
+from 教材src.config import ACCENT, COLORS, GREY, save_fig, save_table
+from 教材src.io_utils import read_csv
 
 
 def main() -> None:

@@ -16,8 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from src.config import ACCENT, COLORS, GREY, save_fig, save_table
-from src.io_utils import read_excel
+from 教材src.config import ACCENT, COLORS, GREY, save_fig, save_table
+from 教材src.io_utils import read_excel
 
 BASE_STD = "ch13/base_data_standard_template.xlsx"
 METRIC_STD = "ch13/metric_standard_template.xlsx"
